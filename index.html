@@ -1,24 +1,286 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 17: Conociendo la Máquina y su Guardián IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 17: Conociendo la Máquina y su Guardián IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes conozcan las partes fundamentales de una impresora 3D.</li>
+                                        <li>Que comprendan cómo las herramientas de monitoreo por IA usan visión por computadora para detectar fallos de impresión en tiempo real.</li>
+                                        <li>Que desarrollen una mentalidad de diagnóstico y creen un checklist de troubleshooting.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un documento titulado "Checklist de Troubleshooting de Impresión 3D" que lista problemas comunes y sus posibles causas.</li>
+                                        <li>Un diagrama simple de una impresora 3D con sus partes principales etiquetadas.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Una impresora 3D real en el aula (muy recomendado).</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Papel y lápices para diagramas.</li>
+                                        <li>Editor de texto para el checklist.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que Xolo está operativo. Si se usa una impresora real, verificar que esté calibrada y lista.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Identificar claramente las partes clave de la impresora 3D del aula (extrusor, cabezal, cama, etc.) para poder señalarlas durante la explicación.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener listas imágenes o videos del fallo de impresión "spaghetti" para mostrar visualmente a qué se refiere Xolo.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como el momento de conocer el hardware y la IA que lo supervisa.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la misión de hoy: entender la máquina y su "ángel guardián" de IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos. Han diseñado para la máquina y preparado el código. Hoy, conocerán a la máquina. Una impresora 3D no es una caja mágica; es un sistema electromecánico de precisión. Entender sus componentes es clave para solucionar problemas. Y luego, conocerán a su guardián: la IA que la vigila cuando nadie está mirando.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo: 'Hola Xolo, listo para la Misión 17', seguido de su nombre, perfil y gustos. Esperen su confirmación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Presentar las partes físicas de la impresora y el concepto de monitoreo por IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando la Impresora 3D y el Monitoreo IA ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador identifica las partes clave de la impresora y presenta la solución de monitoreo por IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Frente a la impresora) Observemos nuestra herramienta de fabricación. Identifiquemos sus partes clave: el **extrusor**, el **cabezal de impresión**, la **cama**, el **filamento** y la **electrónica**. Comprender cómo interactúan es el primer paso para ser un operador experto. Pero, ¿qué pasa si una impresión falla a mitad de la noche? Para eso existen herramientas de monitoreo por IA como 'The Spaghetti Detective', que usan una cámara y visión por computadora para actuar como un supervisor incansable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es de conocimiento práctico. Al final de la sesión, podrán decir: <strong>'Yo puedo identificar las partes principales de una impresora 3D y entiendo cómo una IA de monitoreo usa visión por computadora para detectar fallos de impresión.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Visión por Computadora para Detección de Fallos) ⏰ 15 minutos</h2>
+                <p>Fase de diálogo con Xolo para entender cómo funciona un sistema de detección de fallos por IA y el rol del humano en el diagnóstico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Guardián IA y el Fallo "Spaghetti" ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre su rol como 'Guardián IA' y cómo funciona la detección.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Vamos al A.I. GYM. Hoy Xolo simula ser un guardián de IA, entrenado con miles de imágenes de impresiones. Para entender su función, consúltenle: <strong>'Xolo, explícame tu rol como guardián de IA y cómo funciona la detección de fallos por visión por computadora.'</strong> Mientras leen, mostraré un ejemplo del famoso 'fallo spaghetti'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: El Checklist de Troubleshooting ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador verbaliza la explicación de Xolo sobre la colaboración Humano-IA en la resolución de problemas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entender las partes de la máquina es clave para el troubleshooting. Como explica Xolo, la IA detecta el fallo, pero a menudo es el humano quien debe diagnosticar la causa raíz mecánica. Si la impresión falla, un buen operador sigue un checklist: ¿Está el filamento atascado? ¿Está la cama bien nivelada? ¿Está la boquilla obstruida? La IA alerta, el humano investiga.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Creación de Checklist y Preparación) ⏰ 10 minutos</h2>
+                <p>Fase de trabajo práctico para crear un diagrama de la impresora y un checklist de troubleshooting.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diagrama y Creación del Checklist ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes dibujan la impresora, la etiquetan y crean su propio checklist de diagnóstico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Tienen 10 minutos. Primero, dibujen un diagrama simple de la impresora 3D y etiqueten sus partes principales. Segundo, dialoguen con Xolo para obtener un checklist prioritario para un 'spaghetti fail'. Pregúntenle: **"Si la IA me alerta de un 'spaghetti fail', ¿qué debería revisar primero?"** Basado en su respuesta, creen un documento titulado "Checklist de Troubleshooting de Impresión 3D" con los problemas y sus causas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final para compartir los checklists y reflexionar sobre la colaboración Humano-IA en la supervisión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una reflexión sobre la importancia de entender la mecánica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su checklist. Reflexionen: <strong>¿Por qué es importante entender la mecánica de la impresora, incluso si una IA la está monitoreando? ¿En qué otras áreas de la vida una IA de visión podría actuar como un 'guardián'?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Discusión en Parejas) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes comparten sus checklists y discuten sobre el rol de la IA como supervisor.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, compartan una parte de su checklist. Discutan las preguntas de la reflexión. ¿Se les ocurren otros usos para una IA guardiana?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador consolida la sesión, posicionando a los estudiantes como operadores con conocimiento.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Han diseccionado la máquina y han entendido a su ángel guardián digital. Ahora son más que diseñadores; son operadores con conocimiento. Comprenden que la tecnología no es una caja negra, sino un sistema de partes interdependientes. Y entienden cómo la IA puede ser un colaborador crucial, no en la creación, sino en la supervisión y la seguridad. Están listos para la prueba final: la primera impresión.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
